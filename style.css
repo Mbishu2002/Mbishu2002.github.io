@@ -1,0 +1,58 @@
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 50px;
+    text-align: left;
+}
+
+header {
+    margin-bottom: 20px;
+}
+
+h1 {
+    color: #333;
+}
+
+p {
+    color: #555;
+}
+
+.bio {
+    display: flex;
+    justify-items: flex-start;
+    margin-right: 20%;
+}
+
+.project {
+    margin: 150px;
+    margin-top: 0;
+    text-align: left;
+    display: flex; /* Add this to make project items flex containers */
+    justify-content: space-between; /* Add this to space items evenly */
+}
+
+.project img {
+    max-width: 100%;
+    border-radius: 10px;
+    margin-right: 20px;
+    display: inline-block;
+}
+
+.project-info {
+    flex-grow: 2; 
+}
+
+.project-links {
+    flex-shrink: 0; 
+}
+
+#me {
+    display: flex;
+    justify-content: flex-start;
+}
+
+#links {
+    display: flex;
+    justify-content: flex-start;
+    padding: 10px;
+}
