@@ -1,8 +1,10 @@
 body {
-    font-family: Poppins;
+    font-family: 'Courier New', monospace; 
     line-height: 1.6;
     margin: 50px;
     text-align: left;
+    background-color: #2d2d2d; /* Dark background color */
+    color: #ffffff; /* Light text color */
 }
 
 header {
@@ -11,31 +13,32 @@ header {
 }
 
 h1 {
-    color: #333;
+    color: #bbe1fa; /* Light blue color for headers */
 }
 
 p {
-    color: #555;
+    color: #a6a6a6; /* Gray color for paragraphs */
 }
 
-.bio {
-    align-items: center;
-    display: flex;
-    justify-items: flex-start;
-    margin-left:20px;
+a {
+    text-decoration: none;
+    color: #4ecdc4; /* Turquoise color for links in dark mode */
+}
+
+.bio, .portfolio, .project, #me, #links {
+    margin-left: 20px;
     margin-right: 20%;
 }
-.portfolio{
-    align-items: center;
-    margin-left: 20%;
-    margin-right: 20%;
+
+.portfoli {
+    margin-left: 10%
 }
 
 .project {
     margin-top: 0;
     text-align: left;
-    display: flex; 
-    justify-content: space-between; 
+    display: flex;
+    justify-content: space-between;
 }
 
 .project img {
@@ -47,11 +50,11 @@ p {
 }
 
 .project-info {
-    flex-grow: 2; 
+    flex-grow: 2;
 }
 
 .project-links {
-    flex-shrink: 0; 
+    flex-shrink: 0;
 }
 
 #me {
@@ -63,18 +66,45 @@ p {
     padding: 10px;
 }
 
-
 #links {
     display: flex;
-    justify-content: flex-start;
-    padding: 10px;
-    margin-left: 10%;
+    list-style-type: none;
+    padding: 0;
+    margin-top: 0;
+    margin-left: 11%;
+}
+
+#links li {
+    margin-right: 10px; 
+}
+
+#links a {
+    text-decoration: none;
+    color: #ffffff; /* White color for links in dark mode */
 }
 
 #image {
     height: 200px;
-    width:300px;
+    width: 300px;
 }
+
 footer {
     text-align: center;
+}
+/* Your existing styles for larger screens */
+
+@media screen and (max-width: 768px) {
+
+    body {
+      margin: 10px;
+    }
+    .project {
+        flex-direction: column;
+        margin: 5px
+    }
+    #me {
+        flex-direction: column;
+        margin: 5px
+    }
+
 }
